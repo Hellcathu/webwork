@@ -5,11 +5,11 @@ import './App.css';
 
 function App() {
   const images = [
-    { src: '/give.jpg', description: 'Description 1' },
-    { src: '/listen.jpg', description: 'Description 2' },
-    { src: '/pray.jpg', description: 'Description 3' },
-    { src: '/shock.jpg', description: 'Description 4' },
-    { src: '/throw.jpg', description: 'Description 5' },
+    { src: '/webwork/give.jpg', description: 'Description 1' },
+    { src: '/webwork/listen.jpg', description: 'Description 2' },
+    { src: '/webwork/pray.jpg', description: 'Description 3' },
+    { src: '/webwork/shock.jpg', description: 'Description 4' },
+    { src: '/webwork/throw.jpg', description: 'Description 5' },
   ];
 
   return (
