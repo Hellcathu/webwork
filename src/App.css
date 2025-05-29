@@ -10,12 +10,12 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* 把最後一區壓到底部 */
+  justify-content: space-between;
 }
 
 .right-panel {
   width: 40%;
-  background-image: url('/your-background-image.jpg');
+  background-image: url('/your-background.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -26,28 +26,22 @@
   font-weight: bold;
   padding: 0.5rem;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
 }
 
-.image-grid {
+.section.image-grid {
   display: flex;
-  justify-content: center;   /* 橫向置中 */
+  justify-content: center;      /* 把圖片們放中間 */
+  align-items: center;          /* 垂直置中區塊內圖片 */
   gap: 1rem;
-  align-items: center;
-  margin-top: 1rem
-  
-
+  padding-bottom: 1rem;
 }
 
 .image-cell {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .image-cell img {
