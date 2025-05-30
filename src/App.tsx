@@ -2,19 +2,19 @@ import './App.css';
 
 function App() {
   const images = [
-    { src: '/give.jpg', description: 'Description 1' },
-    { src: '/listen.jpg', description: 'Description 2' },
-    { src: '/pray.jpg', description: 'Description 3' },
-    { src: '/shock.jpg', description: 'Description 4' },
-    { src: '/throwball.jpg', description: 'Description 5' },
+    { src: '/give.jpg /', description: 'Description 1' },
+    { src: '/listen.jpg /', description: 'Description 2' },
+    { src: '/pray.jpg /', description: 'Description 3' },
+    { src: '/shock.jpg /', description: 'Description 4' },
+    { src: '/throwball.jpg /', description: 'Description 5' },
   ];
 
   return (
     <div className="container">
       <div className="header-overlay">
-       <img src="/background.jpg" className="header-image" />
+       <img src="/background.jpg /" className="header-image" />
        <video
-          src="/groupvid.MOV"
+          src="/groupvid.MOV /"
           className="header-video"
           muted
           loop
