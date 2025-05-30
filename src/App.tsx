@@ -14,7 +14,7 @@ function App() {
       <div className="header-overlay">
        <img src="/background.jpg /" className="header-image" />
        <video
-          src="/groupvid.mov /"
+          src="/groupvid.mp4"
           className="header-video"
           muted
           loop
