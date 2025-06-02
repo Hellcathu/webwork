@@ -9,7 +9,7 @@ body, html {
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url('/background.jpg'); /* 背景圖在這 */
+  background-image: url('/background.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,19 +59,35 @@ body, html {
   opacity: 1;
 }
 
-.header-title {
+.header-title-block {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2.5rem;
-  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  z-index: 2;
   color: white;
-  text-shadow: 0 0 10px black;
+  cursor: pointer;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+}
+
+.sub-title {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+  text-shadow: 0 0 4px black;
 }
 
 
-
+.header-title:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
 
 
 .image-row {
@@ -104,12 +120,20 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: 'Baloo 2', sans-serif;  /* 可愛圓字體 */
+  font-size: 2rem;
   color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* 黑底半透明 */
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  text-align: center;
   pointer-events: none;
+  max-width: 90%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
+
 
 .image-cell:hover .image {
   opacity: 0.1;
@@ -118,4 +142,5 @@ body, html {
 .image-cell:hover .description {
   opacity: 1;
 }
+
 
